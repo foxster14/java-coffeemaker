@@ -1,5 +1,3 @@
-package edu.ncsu.csc326.coffeemaker;
-
 public class CoffeeMaker {
 	/** Array of recipes in coffee maker */
 	private static RecipeBook recipeBook;
@@ -83,6 +81,9 @@ public class CoffeeMaker {
         
         if (getRecipes()[recipeToPurchase] == null) {
         	change = amtPaid;
+
+
+			
         } else if (getRecipes()[recipeToPurchase].getPrice() <= amtPaid) {
         	if (inventory.useIngredients(getRecipes()[recipeToPurchase])) {
         		change = amtPaid - getRecipes()[recipeToPurchase].getPrice();
