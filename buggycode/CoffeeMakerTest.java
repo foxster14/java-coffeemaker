@@ -3,11 +3,8 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
-/**
- * Unit tests for CoffeeMaker class.
- * 
- * @author Sarah Heckman
- */
+import jdk.jfr.Timestamp;
+
 public class CoffeeMakerTest {
 	
 	/**
@@ -107,6 +104,17 @@ public class CoffeeMakerTest {
 	public void testMakeCoffee() {
 		coffeeMaker.addRecipe(recipe1);
 		assertEquals(25, coffeeMaker.makeCoffee(0, 75));
+	}
+
+	/**
+	  * The coffee maker should only allow three recipies
+	*/
+	@Test
+	public void testAdd4Recipes() {
+		coffeeMaker.addRecipe(recipe1);
+		coffeeMaker.addRecipe(recipe2);
+		coffeeMaker.addRecipe(recipe3);
+		assertEquals(false, coffeeMaker.addRecipe(recipe4));
 	}
 
 }
