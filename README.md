@@ -58,16 +58,16 @@ A JUnit testing file named CoffeeMakerTest.java has been placed into the buggy a
 
 *Give the Unit Tests a Try...*
 
-Compile and run the CoffeeMakerTest.java file in each directory.  Review Lab 3 for directions on how to compile and run JUnit4 tests.
+- Compile and run the CoffeeMakerTest.java file in each directory.  Review Lab 3 for directions on how to compile and run JUnit4 tests.
 
 When ran in the "buggy code" directory, the CoffeeMakerTest unit tests will have three passing tests and one failing test. Review and understand what the passing tests are checking for - they have nothing to do with the 6 bugs tho...  The failing test is checking for one of the coding bugs.
 
-Run the CoffeeMakerTest.java unit test in the "bug fixed code" directory and all tests pass.  What was fixed to make the test pass?
+- Compile and run the CoffeeMakerTest.java unit test in the "bug fixed code" directory and verify all tests pass.  What was fixed to make the test pass?
 
-Locate the 5 other bugs in the code.
+*Locate the 5 other bugs in the Code*
 
-Hint: 1 of the bug is in Main.java as mentioned above.  It is however a Main Menu bug, so a unit test isn't necessary per se. Could it be unit tested? (like in lab 3)
+Hint: 1 of the bugs is in Main.java as mentioned above.  It is however a Main Menu bug, so a unit test isn't necessary per se. It could just be part of the QA plan. Could it be unit tested though? (like in lab 3)
 
-The Developer needs to implement additional unit tests that identify the bugs in the buggy code.
+The Developer needs to implement additional unit tests that identify the remainder bugs in the buggy code.
 
-Then verify that the tests pass in the bug fixed code.
+Then verify that the tests pass in the bug fixed code, aka 'All Tests Passing'
