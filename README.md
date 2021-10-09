@@ -1,5 +1,5 @@
 # SENG3110 Software Testing
-## Lab 4 Source Code
+## Lab 4 
 ### Unit Testing the Java Coffee Maker Application
 
 Please read the entire README before proceeding!!!
