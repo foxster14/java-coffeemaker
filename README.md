@@ -1,15 +1,14 @@
-# SENG3110 Software Testing
-## Lab 4 
+# Unit Testing with Java
 ### Unit Testing the Java Coffee Maker Application
 
-Please read the entire README before proceeding!!!
+This application provides a menu for the user to create, update, and delete coffee beverage recipes. They can also check the inventory to view how many ingredients are remaining and add new ingredients when low on supply.
 
 ### Objectives
 
-- Write a Test Plan for the Coffee Maker Application 
-- Write JUnit Tests for the Coffee Maker Application
-
-For each of the above objectives you will be playing a different role on the development team.
+- Locate the differences between 'buggycode' and 'bugfixedcode'
+- Write unit tests to find these errors
+- Each module will have its own test class
+- The unit tests will fail when ran against classes in 'buggycode' and pass for classes in 'bugfixedcode'
 
 ### Write a Test Plan
 
@@ -28,10 +27,6 @@ The requirements document, a class diagram, and sequence diagram are provided in
 The code is complete and functional.  Two versions of the code are provided.  One that has bugs (buggycode directory).  One that has been fixed (bugfixedcode directory). 
 
 There are six (6) bugs.  Not all classes have bugs.
-
-Pick a location on your computer and clone the repository:
-
-``` git clone https://github.com/axbjos/seng3110coffeemaker.git ```
 
 Review the code and directory structure before proceeding.  Don't just blindly follow instructions.
 
