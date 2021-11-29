@@ -1,3 +1,4 @@
+//static import is only for classes & interfaces
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
@@ -11,6 +12,9 @@ public class CoffeeMakerTest {
 	 * The object under test.
 	 */
 	private CoffeeMaker coffeeMaker;
+	private RecipeBook recipeBook;
+	private Inventory inventory;
+
 	
 	// Sample recipes to use in testing.
 	private Recipe recipe1;
@@ -28,6 +32,9 @@ public class CoffeeMakerTest {
 	@Before
 	public void setUp() throws RecipeException {
 		coffeeMaker = new CoffeeMaker();
+		inventory = new Inventory();
+		recipeBook = new RecipeBook();
+		recipe1 = new Recipe();
 		
 		//Set up for r1
 		recipe1 = new Recipe();
@@ -56,7 +63,7 @@ public class CoffeeMakerTest {
 		recipe3.setAmtSugar("1");
 		recipe3.setPrice("100");
 		
-		//Set up for r4
+		//Set up for r4 which shouldn't work because we can only have 3
 		recipe4 = new Recipe();
 		recipe4.setName("Hot Chocolate");
 		recipe4.setAmtChocolate("4");
@@ -116,5 +123,6 @@ public class CoffeeMakerTest {
 		coffeeMaker.addRecipe(recipe3);
 		assertEquals(false, coffeeMaker.addRecipe(recipe4));
 	}
+ 
 
 }
